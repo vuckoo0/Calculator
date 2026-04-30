@@ -58,7 +58,7 @@ void print_result(const double x, const double y, const char op, const double an
     }
 }
 
-void print_calc_intro(const double last_answer) {
+void print_calc_info(const double last_answer) {
     printf("%s\n", MINUS_SEPARATOR);
     printf("Division by zero is not permitted! Return value will be NAN!\n");
     printf("Square root will be taken of the absolute value of the entered number.\n");
@@ -280,7 +280,7 @@ double calculator(const double last_answer, const int times_used) {
     double answer = 0;
     char root;
 
-    print_calc_intro(last_answer);
+    print_calc_info(last_answer);
 
     const double x = get_number(&times_used, &last_answer);
     const char operation = get_operator();
