@@ -111,7 +111,7 @@ double get_number(const int *times_used, const double *last_answer) {
     return number;
 }
 
-char get_operator(int times_used) {
+char get_operator() {
     char buffer[BUFFER_SIZE], operation;
     int times_tried = 0;
     bool is_valid;
@@ -283,7 +283,7 @@ double calculator(const double last_answer, const int times_used) {
     print_calc_intro(last_answer);
 
     const double x = get_number(&times_used, &last_answer);
-    const char operation = get_operator(times_used);
+    const char operation = get_operator();
     const double y = get_number(&times_used, &last_answer);
 
     // seeing witch operation we will use
