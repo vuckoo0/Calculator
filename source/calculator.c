@@ -141,7 +141,7 @@ char get_operator() {
                 buffer[0] == '-' ||
                 buffer[0] == '*' ||
                 buffer[0] == '/' ||
-                (buffer[0] == 'w') ||
+                buffer[0] == 'w' ||
                 buffer[0] == '%' ||
                 buffer[0] == 'p' ||
                 buffer[0] == 'r' ||
@@ -379,6 +379,7 @@ int main() {
     int times_used = 0;
     bool running = true;
 
+    system(CLEAR);
     printf("\n%s WELCOME TO THE CALCULATOR %s\n", EQUAL_SEPARATOR, EQUAL_SEPARATOR);
 
     while (running) {
@@ -403,6 +404,7 @@ int main() {
 
             case 'q':
                 printf("\n%s\nBye!\n%s\n", EQUAL_SEPARATOR, EQUAL_SEPARATOR);
+                system(CLEAR);
                 running = false;
                 break;
 
