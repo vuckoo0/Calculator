@@ -1,0 +1,3 @@
+/home/djape/Programing/Calculator/build/CMakeFiles/calculator.dir
+/home/djape/Programing/Calculator/build/CMakeFiles/edit_cache.dir
+/home/djape/Programing/Calculator/build/CMakeFiles/rebuild_cache.dir
